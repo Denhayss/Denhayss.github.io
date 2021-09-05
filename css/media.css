@@ -1,0 +1,106 @@
+/* ПЕРВАЯ ГЛАВНАЯ СТРАНИЦА */
+/* 1280 * 800 px планшет */
+@media only screen and (max-width:800px){
+
+}
+/* 1280 * 800 px телефон */
+@media only screen and (max-width:800px){
+	.banner_articles{
+		display: block;
+		margin-top: 50px;
+	}
+	.menu>li{
+		padding-left: 20px;
+		margin-left: 20px;
+		position: relative;
+	}
+}
+@media only screen and (max-width:900px){
+	.image-slider__image>img{
+		height: 280px;
+	}
+}
+@media only screen and (max-width:746px){
+	.image-slider__image>img{
+		height: 220px;
+	}
+}
+@media only screen and (max-width:1016px){
+	.work_message_hello{
+		font-size: 35px;
+	}
+	.reviews_title{
+		font-size: 35px;
+	}
+	.work_gallery>img{
+		height: 150px;
+		width: 350px;
+	}
+}
+@media only screen and (max-width:726px){
+	.reviews_title{
+		font-size: 30px;
+	}
+	.work_message_hello{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width:819px){
+	.work_message_hello{
+		font-size: 35px;
+	}
+	.work_gallery>img{
+		height: 150px;
+		width: 300px;
+	}
+}
+@media only screen and (max-width:1168px){
+	.title_apps{
+		font-size: 40px;
+	}
+	.title_apps_pk{
+		font-size: 40px;
+	}
+}
+@media only screen and (max-width:949px){
+	.title_apps{
+		font-size: 30px;
+	}
+	.title_apps_pk{
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width:715px){
+	.title_apps{
+		font-size: 25px;
+	}
+	.title_apps_pk{
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width:1012px){
+	.text_info_cool{
+		font-size: 15px;
+	}
+	.text_info_cammon{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width:800px){
+	.text_info_cool{
+		font-size: 12px;
+	}
+	.text_info_cammon{
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width:1140px){
+	.title_game{
+		font-size: 35px;
+	}
+}
+@media only screen and (max-width:810px){
+	.title_game{
+		font-size: 28px;
+	}
+}

@@ -1,0 +1,1253 @@
+body{
+	background-color: black;
+	font-family: 'Roboto Mono', monospace;
+}
+/*--------SUBS------------*/
+.notification {
+	border-radius: 25px;
+	position: fixed;
+	z-index: 1001;
+	left: -400px;
+	bottom: 20px;
+	opacity: 0;
+	width: 300px;
+	height: 135px;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	transition: all 0.5s ease;
+	display: flex;
+	background-image: url('../img/bg_blue.svg');
+}
+
+.notification.blue {
+	background-image: url('../img/bg_blue.svg');
+}
+
+.notification.red {
+	background-image: url('../img/bg_red.svg');
+}
+
+.notification.go {
+	left: 20px;
+	opacity: 1;
+}
+
+.notification .left_noth_prem {
+	width: 70%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.notification .left_noth_prem .tit {
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	line-height: 1.2;
+}
+
+.notification .left_noth_prem .descr {
+	font-weight: 300;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.8);
+	margin: 0.2em 0;
+}
+
+.notification .left_noth_prem > .btns {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 6px;
+}
+
+.notification .left_noth_prem > .btns a {
+	border-radius: 3px;
+	padding: 4px 0;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 12px;
+	transition: all 0.4s ease-in-out;
+	display: block;
+	width: 47%;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notification .left_noth_prem > .btns a:hover {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	transform: scale(1.18);
+}
+
+.notification .left_noth_prem > .btns a.youtube_bg {
+	background-image: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+.notification .left_noth_prem > .btns a.vk_bg {
+	background-image: linear-gradient(45deg, #00b4db, #0083b0);
+}
+
+.notification .left_noth_prem > .btns a.Tg_bg {
+	background-image: linear-gradient(45deg, #f82c8d, #a826e0);
+}
+
+.notification .right_noth_prem {
+	width: 30%;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	padding: 10px;
+}
+
+.notification .right_noth_prem > img {
+	width: 75px;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+/*------------------------*/
+.wrapper{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+}
+.navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.logo_ava{
+	height: 100px;
+}
+.menu{
+	display: flex;
+	padding_left: 0;
+	font-weight: bold;
+	text-transform: uppercase ;
+	margin-bottom: 0;
+}
+.menu>li{
+	padding-left: 50px;
+	margin-left: 50px;
+	position: relative;
+}
+.menu>li:first-child::before{
+	display: none;
+}
+.menu>li:first-child{
+	padding-left: 0;
+	margin-left: 0;
+}
+.menu>li::before{
+	display: block;
+	content: "";
+	width: 2px;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	left: 0;
+}
+
+.menu>li>a{
+	text-decoration: none;
+	color: white;
+}
+.menu_main:hover{
+text-shadow: 0px 0px 2px whitesmoke;
+}
+.menu_apps:hover{
+text-shadow: 0px 0px 2px whitesmoke;
+}
+.menu_games:hover{
+text-shadow: 0px 0px 2px whitesmoke;
+}
+.menu_news_web:hover{
+text-shadow: 0px 0px 2px whitesmoke;
+}
+.menu_articles:hover{
+text-shadow: 0px 0px 2px whitesmoke;
+}
+.banner{
+	color: white;
+	/*background-color: #D93737;
+	background-image: url(../img/night.jpg);*/
+	background: url(../img/night.jpg) 0 0 no-repeat fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 260px;
+	padding-bottom: 260px;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+  	font-weight: black 900;
+	font-size: 50px;
+	padding-bottom: 30px;
+}
+.banner_game:hover{
+	color: greenyellow;
+	border: 2px solid greenyellow;
+}
+.banner_articles:hover{
+	color: greenyellow;
+	border: 2px solid greenyellow;
+}
+.kt{
+	height: 1000px;
+	margin: -600px 0 0 0;
+	justify-content: flex-end;
+	/*position: absolute;*/
+	right: 0;
+}
+.discription{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	max-width: 700px;
+}
+.banner_butt>a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold 700;
+	color: yellow;
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	border: 2px solid yellow;
+	padding: 20px;
+	max-width: 190px;
+	margin-right: 100px;
+	text-align: center;
+	border-radius: 30px;
+
+}	
+.banner_butt {
+	margin-top: 50px;
+}
+.work{
+	padding-bottom: 50px;
+}
+.work_message_hello{
+	padding-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: black 900;
+	font-size: 50px;
+	padding-bottom: 30px;
+	color: white;
+
+}
+.work_gallery>img{
+	margin: 20px;
+	height: 210px;
+	width: 450px;
+	border-radius: 20px;
+}
+
+.hack1{
+	box-shadow: 0 0 50px 5px seagreen;
+}
+.hack2{
+	box-shadow: 0 0 50px 5px beige;
+}
+.hack3{
+	box-shadow: 0 0 50px 5px yellow;
+}
+.hack4{
+	box-shadow: 0 0 50px 5px orange;
+}
+.hack5{
+	box-shadow: 0 0 50px 5px blue;
+}
+.hack6{
+	box-shadow: 0 0 50px 5px #9000ff;
+}
+.reviews{
+	
+}
+.reviews_discription{
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	max-width: 700px;
+}
+.slider__item>h4{
+	background-color: white;
+	color: white;
+}
+.slider__item{
+	display: inline-block ;
+	padding: 20px;
+}
+/* ------------------SLIDER--------------------- */
+.reviews_title{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: black 900;
+	font-size: 50px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+.image_slider{
+	padding: 30px 0 70px 0;
+}
+.image-slider__wrapper{
+
+}
+.image-slider__slide{
+
+}
+.image-slider__image{
+	text-align: center;
+}
+.image-slider__image>img{
+	max-width: 100%;
+}
+.image-slider__image>img{
+	padding: 5px;
+}
+
+/*--------------------------------*/
+			 /*СОФТЫ*/
+/*--------------------------------*/
+.apps_banner{
+	display: flex;
+	justify-content: center;
+	background: url(../img/province_2.png) 0 0 no-repeat fixed;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.title_apps{
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: black 900;
+	font-size: 50px;
+	padding-bottom: 30px;
+	padding: 25px 0 25px 0;
+	border-bottom: 6px solid black;
+}
+.icons_banner{
+	display: flex;
+	justify-content: center;
+	flex-flow: row-reverse wrap-reverse;
+}
+.aep{
+	height: 25px;
+}
+.cart_apps{
+	color: black;
+	display: inline-block;
+	border-radius: 30px;
+	margin: 20px;
+	border: 2px solid black;
+}
+.name_apps{
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold 700;
+	padding: 10px 20px 10px 20px;
+}
+.img_apps{
+	height: 200px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	padding: 10px 20px 10px 20px;
+}
+.download_apps{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps:hover{
+	color: white;
+	background-color: #e54545;
+}
+/* PKKKKKKKKKKKKKK*/
+.title_apps_pk{
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: black 900;
+	font-size: 50px;
+	padding-bottom: 30px;
+	padding: 25px 0 25px 0;
+	border-bottom: 6px solid black;
+}
+/*popup*/
+/*.popup{
+	color: black;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	top: 0;
+	left: 0;
+}
+.popup_body{
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popup_hi{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popup_name{
+	display: flex;
+	justify-content: center;
+}
+.popup_discription{
+	display: flex;
+	justify-content: center;
+}
+*/
+
+.popup_ava{
+	display: flex;
+	justify-content: center;
+}
+.popup_end{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.dopap_telegram_icon{
+	margin: 0 10px 0 0;
+	border-radius: 50px;
+	background-color: #33bd7a;
+	height: 40px;
+}
+.dopap_telegram{
+	font-weight: bold;
+	color: #fff;
+	background-color: /*#138a6e*/ #33bd7a;
+	border-radius: 25px ;
+	border: 2px solid #33bd7a;
+	padding: 10px;
+}
+.dopap_telegram:hover{
+	box-shadow: 0 0 20px #3ae894;
+}
+.timer{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.timer:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	z-index: 3;
+	background-color: #fff;
+	animation: mask_left 10s steps(1, end) forwards;
+}
+.timer:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	z-index: 3;
+	background-color: seagreen;
+	animation: mask_right 10s steps(1, end) forwards;
+}
+
+
+.timer__line{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	z-index: 2;
+	animation: line 10s linear forwards;
+}
+.timer__line:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: seagreen;
+	
+
+}
+.timer__body{
+	color: white;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #333;
+	text-align: center;
+	overflow: hidden;
+	z-index: 4;
+}
+.timer__counter{
+	animation: counter 10s steps(9,end) forwards;
+}
+.timer__counter span{
+	font-size: 40px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+@keyframes counter{
+	0%{
+
+	}
+	100%{
+		transform: translate(0,-900px);
+	}
+}
+@keyframes line {
+	0%{
+
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes mask_left{
+	0%{
+		visibility: visible;
+	}
+	50%,
+	100%{
+		visibility: hidden;
+	}
+}
+@keyframes mask_right{
+	0%{
+		visibility: hidden;
+	}
+	50%,
+	100%{
+		visibility: visible;
+	}
+}
+.popup{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background: url(../img/province_2.png) 0 0 no-repeat fixed;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.dopap{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background: url(../img/province_2.png) 0 0 no-repeat fixed;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.popup_gall_banner{
+	 display: flex;
+	 justify-content: center;
+	 flex-flow: row-reverse wrap-reverse;
+}
+.popup_conent{
+	position: relative;
+}
+.popup_body{
+	max-height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.popup_name{
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: black 900;
+	font-size: 50px;
+	padding-bottom: 30px;
+	padding: 25px 0 25px 0;
+}
+.popup_ava{
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	border: 2px solid black;
+	border-radius: 25px;
+	background-image: url('../img/apk_foot.jpg') 0 0 no-repeat scroll;
+
+}
+.popup_name_1{
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: black 900;
+
+}
+.popup_screenshot{
+	margin: 20px 0 20px 20px;
+	height: 400px;
+	border-radius: 25px;
+}
+.popup_virus_test{
+	display: flex;
+	justify-content: center;
+	border-radius: 50px;
+	background-color: #ff4747;
+	color: white;
+	padding: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: black 900;
+}
+.popup_down_orig{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: seagreen;
+	border: 2px solid seagreen;
+	/*border-radius: 25px;*/
+}
+.popup_down_orig:hover{
+	background-color: seagreen;
+	color: white;
+}
+.popup_down_mod{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: seagreen;
+	border: 2px solid seagreen;
+	/*border-radius: 25px;*/
+}
+.popup_down_mod:hover{
+	background-color: seagreen;
+	color: white;
+}
+.popup_guide{
+	border-radius: 25px;
+	background-color: #2b2929d3;
+	border: 1px solid black;
+	margin: 25px;
+	display: flex;
+	justify-content: center;
+}
+.popup_guide_info{
+	color: #a1eded;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	line-height: 30px;
+}
+.popup_modfunc{
+	border-radius: 25px;
+	background-color: #2b2929d3;
+	border: 1px solid black;
+	margin: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.popup_mod_mess{
+	color: #a1eded;
+	margin: 10px 10px 0 10px;
+	line-height: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+.popup_mod_div{
+	display: flex;
+	justify-content: center;
+}
+.popup_mod_spisok{
+	color: #a1eded;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	line-height: 30px;
+    list-style: none;
+}
+
+.popup_mod_spisok>li:before {
+    content:  "—";
+    position: relative;
+    left:     -5px;
+}
+.vers_apps{
+	font-size: 10px;
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: medium;
+	padding: 0 20px 0 20px;
+}
+/*---------GG EDITION-----------*/
+.popup_GG{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_GG{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_GG:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*---------VX EDITION-----------*/
+.popup_VIRX{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_VIRX{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_VIRX:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*---------QUICK EDIT EDITION-----------*/
+.popup_QEDIT{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_QEDIT{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_QEDIT:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*---------APK Repacker-----------*/
+.popup_apkr{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_apkr{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_apkr:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*---------AIDE-----------*/
+.popup_AIDE{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_AIDE{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_AIDE:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*----------NDK-----------*/
+.popup_NDK{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_NDK{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_NDK:hover{
+	color: white;
+	background-color: #e54545;
+}
+
+/*----------Lucky Patcher-----------*/
+.popup_Luc{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_Luc{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_Luc:hover{
+	color: white;
+	background-color: #e54545;
+}
+
+/*----------DnSpy-----------*/
+.popup_Dns{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_Dns{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_Dns:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*----------Android Studio-----------*/
+.popup_AndS{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_AndS{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_AndS:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*----------Visual Studio Code-----------*/
+.popup_Vsc{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_Vsc{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_Vsc:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*----------Apk Easy Tool-----------*/
+.popup_Ape{
+	color: black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	background-image: url(../img/province_2.png);
+	top: -100%;
+	left: 0;
+	opacity: 1;
+
+	overflow: scroll;
+
+	position: fixed;
+
+	transition: 250ms;
+}
+.download_apps_Ape{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_apps_Ape:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*----------------------------------
+				GAMES
+------------------------------------*/
+.title_game{
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: black 900;
+	font-size: 50px;
+	padding-bottom: 30px;
+	padding: 25px 0 25px 0;
+	border-bottom: 6px solid black;
+}
+.game_banner{
+	background: url(../img/province_2.png) 0 0 no-repeat fixed;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.icons_game_banner{
+	display: flex;
+	justify-content: center;
+	flex-flow: row-reverse wrap-reverse;
+}
+.cart_game{
+	color: black;
+	display: inline-block;
+	border-radius: 30px;
+	margin: 20px;
+	border: 2px solid black;
+}
+.name_game{
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold 700;
+	padding: 10px 20px 10px 20px;
+}
+.vers_game{
+	font-size: 10px;
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: medium;
+	padding: 0 20px 0 20px;
+}
+.img_game{
+	height: 200px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	padding: 10px 20px 10px 20px;
+}
+.download_game{
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	padding: 10px;
+	color: #e54545;
+	border: 2px solid #e54545;
+	border-radius: 25px;
+
+}
+.download_game:hover{
+	color: white;
+	background-color: #e54545;
+}
+/*-------------------------------------
+				NEWS
+---------------------------------------*/
+
+.news_banner{
+	background: url(../img/province_2.png) 0 0 no-repeat fixed;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.news_title{
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight: black 900;
+	font-size: 50px;
+	padding-bottom: 30px;
+	padding: 25px 0 25px 0;
+	border-bottom: 6px solid black;
+}
+.news_info_cool{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 25px;
+	border: 2px solid red;
+	padding: 10px;
+	background-color: #ff00002a;
+	border-radius: 5px;
+}
+.text_data_cool{
+	color: darkgreen;
+	border: 2px solid darkgreen;
+	padding: 10px;
+	background-color: #0d540f21;
+}
+.text_info_cool{
+	font-size: 18px;
+	font-family: 'Robotto', sans-serif;
+	overflow: hidden;
+}
+.text_etc_cool{
+	color: red;
+	border-radius: 25px;
+	border: 2px solid red;
+	padding: 10px;
+}
+.text_etc_cool:hover{
+	color: white;
+	background-color: red;
+
+}
+/*------------------------*/
+.news_info_cammon{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 25px;
+	border: 2px solid #197368;
+	padding: 10px;
+	background-color: #00ffff2a;
+	border-radius: 5px;
+}
+.text_data_cammon{
+	color: darkgreen;
+	border: 2px solid darkgreen;
+	padding: 10px;
+	background-color: #0d540f21;
+}
+.text_info_cammon{
+	font-size: 18px;
+	font-family: 'Robotto', sans-serif;
+	overflow: hidden;
+}
+.text_etc_cammon{
+	color: #197368;
+	border-radius: 25px;
+	border: 2px solid #197368;
+	padding: 10px;
+}
+.text_etc_cammon:hover{
+	color: white;
+	background-color: #197368;
+
+}
